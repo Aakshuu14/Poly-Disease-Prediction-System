@@ -1,1 +1,0 @@
-streamlit run "D:/Poly-Disease-Prediction-System/PolyDisPS.py"

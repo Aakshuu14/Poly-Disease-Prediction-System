@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Aditya </title>
+Made By Aditya Narayan - 20221BCA0022
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery Event Handling</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("h1").on({
+    mouseenter: function(){
+      $(this).css("background-color", "red");
+    },
+    mouseleave: function(){
+      $(this).css("background-color", "orange");
+    },
+    focus: function(){
+      $(this).css("background-color", "lightblue");
+    },
+    blur: function(){
+      $(this).css("background-color", "green");
+    },
+    mouseup: function(){
+      $(this).css("color", "yellow");
+    },
+    mousedown: function(){
+      $(this).css("color", "blue");
+    },
+    dblclick: function(){
+      $(this).css("font-size", "100px");
+    }
+  });
+});
+</script>
+</head>
+<body>
+
+<h1>Click me to see the events in action!</h1>
+
+</body>
+</html>
